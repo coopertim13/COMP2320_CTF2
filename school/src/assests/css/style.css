@@ -1,0 +1,42 @@
+body {
+      color: #2c3e50;
+      position: relative;
+}
+.navbar-default {
+    background-color: #2c3e50;
+  }
+  a {
+    color: #ffffff;
+  }
+  .jumbotron {
+    background-color: #eee;
+    padding-top: 150px;
+  }
+  #about {
+    color: black;
+    background-color: #eee;;
+  }
+  section.success {
+    padding-top: 0px;
+  }
+  #contact {
+    padding-top: 75px;
+  }
+  /* Set the height of your slider to the height of your images */
+	
+  .img-responsive {
+    width: 100%;
+  }
+ .list-group a {
+  color: black !important;
+ }
+.row {
+  height : 100px;
+}
+footer{
+  bottom: 0;
+  position: fixed;
+}
+@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:40px; }
