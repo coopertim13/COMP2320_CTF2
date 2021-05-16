@@ -1,4 +1,3 @@
 #!/bin/bash
-docker-compose up -d
-echo ""
-echo "Access site at http://localhost"
+sudo docker build .
+sudo docker-compose up -d
