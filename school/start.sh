@@ -1,2 +1,3 @@
 #!/bin/bash
-docker-compose up -d
+sudo docker build .
+sudo docker-compose up -d

@@ -18,7 +18,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: example
     volumes:
-      - mysql-data-school:/var/lib/mysql
+      - ./database:/var/lib/mysql
 
   adminer:
     image: adminer
