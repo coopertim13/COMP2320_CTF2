@@ -3,13 +3,13 @@ version: '3.1'
 
 services:
   php:
-    build:
-      context: .
-      dockerfile: Dockerfile
     ports:
       - 80:80
     volumes:
       - ./src:/var/www/html/
+    build:
+      context: .
+      dockerfile: Dockerfile
 
   db:
     image: mysql

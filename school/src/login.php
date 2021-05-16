@@ -22,6 +22,9 @@
 				header('Location: login.php?message=Login failed');
 			}
                 }
+		else {
+			header('Location: login.php?message=Login failed');
+		}
         }
 ?>
 <?php
@@ -36,7 +39,7 @@ require('header.php');
       <input type="password" class="form-control" name="password" placeholder="Password" required=""/>     
       <button name="submit" class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
 	<br/>
-	<?php if(isset($_GET['message'])) { echo $_GET['message']; } ?>
+	<?php if(isset($_GET['message'])) { echo htmlspecialchars($_GET['message']); } ?>
 	<style type="text/css">
           span {
                  color: #ffffff;
